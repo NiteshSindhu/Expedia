@@ -1,53 +1,54 @@
 #booking-form{
-   width:90%;
-    margin:10% auto 0;
-    border: 1px solid #ced4da;
-    padding: 20px;
-}
-.top{
-    width:30%;
-    height: 30px;
-    justify-content: space-between;
-    display: flex;
-}
-#form{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-.form-control{
-    border-radius: 10px;
-    width: 30%;
-    height: 30px;
-    margin-left: 10px;
-    font-size: 17px;
-    box-shadow: none;
-    border:0.5 solid gray;
-}
-#form .select-date{
-    width:20%;
-}
-.btn{
-    border: 0;
-    background-color: #fff;
-    padding: 5px 20px 5px 20px;
-}
-.btn:hover{
-    background-color: rgb(231, 237, 253);
-    border-radius: 5px;
-}
-#search{
-    display: block;
-
-    margin: auto;
-    padding: 15px 40px;
-    border-radius: 10px;
-    border: 0;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    background-color:rgb(72, 141, 219) ;
-}
-#search:hover{
-    background-color: rgb(72, 112, 219);
-}
+    width:90%;
+     margin:10% auto 0;
+     border: 1px solid #ced4da;
+     padding: 20px;
+ }
+ .top{
+     width:30%;
+     height: 30px;
+     justify-content: space-between;
+     display: flex;
+ }
+ #form{
+     width: 90%;
+     display: flex;
+     justify-content: space-between;
+ }
+ .form-control{
+     border-radius: 10px;
+     width: 30%;
+     height: 30px;
+     margin-left: 10px;
+     font-size: 17px;
+     box-shadow: none;
+     border:0.5 solid gray;
+ }
+ #form .select-date{
+     width:20%;
+ }
+ .btn{
+     border: 0;
+     background-color: #fff;
+     padding: 5px 20px 5px 20px;
+ }
+ .btn:hover{
+     background-color: rgb(231, 237, 253);
+     border-radius: 5px;
+ }
+ #search{
+     display: block;
+ 
+     margin: auto;
+     padding: 15px 40px;
+     border-radius: 10px;
+     border: 0;
+     color: white;
+     font-size: 16px;
+     font-weight: 500;
+     background-color:rgb(72, 141, 219) ;
+ }
+ #search:hover{
+     background-color: rgb(72, 112, 219);
+ }
+ 
