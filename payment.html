@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            padding: 0%;
+            background-color: #ededed;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        #navbar {
+            margin: 0%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .subBody {
+            display: flex;
+            margin: auto;
+            justify-content: space-evenly;
+
+        }
+
+        #refund_banner {
+            margin: auto;
+        }
+
+        .cancellation_banner {
+            width: 80%;
+            display: flex;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            background-color: white;
+            border-radius: 6px;
+            padding: 30px;
+        }
+
+        .cancellation_banner>img {
+            width: 80px;
+            height: 90px;
+            margin-right: 30px;
+        }
+
+        .subBody {
+            width: 85%;
+            
+        }
+
+        .payment_body {
+            width: 100%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .cart_body {
+            margin: 20px;
+        }
+
+        #card_banner {
+            height: 40px;
+        }
+
+        #traveller_sms {
+            display: inline;
+        }
+
+        form {
+            width: 50%;
+            /* display: flex; */
+            /* flex-direction: column; */
+        }
+
+        .payment_cards {
+            width: 90%;
+            justify-content: center;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 4px;
+            background-color: white;
+            margin-top: 8px;
+        }
+
+        #agree {
+            width: 500px;
+            display: flex;
+            margin: auto;
+        }
+
+        #agree>p {
+            width: 500px;
+            margin-left: 10px;
+        }
+
+        .input_text {
+            width: 400px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        label {
+            margin: 10px;
+        }
+
+        .lighter {
+            font-weight: normal;
+        }
+
+       
+
+        #make_payment {
+            font-size: larger;
+            width: 150px;
+            padding: 10px;
+            background-color: #ffc130;
+            border: transparent;
+            border-radius: 4px;
+        }
+
+        #make_payment:hover {
+            background-color: #feb303;
+            border: black;
+        }
+
+        #hotelDetail_cards {
+            display: flex;
+            flex-direction: column;
+            background-image: url("https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 90%;
+            justify-content: center;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+            border-radius: 4px;
+           
+            margin-top: 8px;
+            color: whitesmoke;
+
+        }
+        label[for="cvv"]{
+            margin-left: 120px ;
+            display: inline-block;
+        }
+        #traveller_cardExpiry, #traveller_cvv{
+            width: 38%;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar" class="payment_cards">
+        <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="expedia logo">
+    </div>
+    <div id="payment">
+        <h2 style="margin-left: 130px;">Review and book</h2>
+        <div>
+            <div class="cancellation_banner">
+                <img
+                    src="https://a.travel-assets.com/travel-assets-manager/03052020/illustration__free__cancellation__sml.svg">
+                <div id="info">
+                    <h4>Free cancellation before 48 hours</h4>
+                    <p>You can change or cancel this stay for a full refund if palns change. Because flexibility
+                        matters.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="subBody">
+            <div class="payment_body">
+                <div class="payment_cards">
+                    <p id="signed">Signed in as</p>
+                    <h4 id="userEmail">vaibhav.bedarkar98@gmail.com</h4>
+                    <p id="reward">You will earn 92 Expedia Rewards points</p>
+                </div>
+                <div class="payment_cards">
+                    <h4>Room</h4>
+                    <p id="reward">Free Wifi, Free parking</p>
+                    <hr>
+                    <form>
+                        <label>Traveller name</label>
+                        <input class="input_text" id="traveller_name" type="text" placeholder="Full name"
+                            required="true">
+
+                        <label>Mobile phone number</label>
+                        <input class="input_text" id="traveller_mobile" type="number" maxmaxlength="10"
+                            placeholder="So the property can reach you" required="true">
+                        <div id="agree"><input id="traveller_sms" type="checkbox">
+                            <p> Receive text alerts about the trips (free of charge)</p>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="payment_cards">
+                    <p id="signed">Debit/Credit Card</p>
+                    <hr>
+                    <form>
+                        <img id="card_banner"
+                            src="https://www.lyra.com/in/wp-content/uploads/sites/8/2020/03/card-schemes.png"><br>
+                        <label>Name on Card</label><br>
+                        <input class="input_text" id="traveller_cardHolder" type="text" placeholder="Cardholder Name"
+                            required="true"><br>
+
+                        <label>Debit/Credit Card number</label><br>
+                        <input class="input_text" id="traveller_cardNumber" type="number" maxlength="12"
+                            placeholder="Enter 12 Digit card number" required="true"><br>
+
+                        <label>Expiry date</label> <label for="cvv">CVV</label><br>
+                        <div id="agree">
+                        <input class="input_text" id="traveller_cardExpiry" type="date" placeholder="Enter expiry date"
+                            required="true">                        
+                        <input class="input_text" id="traveller_cvv" type="number" maxlength="3" placeholder="CVV no"
+                            required="true">
+                        </div>
+
+                        <div id="agree"><input id="traveller_sms" type="checkbox"><br>
+                            <p> Receive text alerts about the trips (free of charge)</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="payment_cards">
+                    <p id="signed">Important information about your booking</p>
+                    <ul class="lighter">
+                        <li>Cancellations or changes made after 18:00 (property local time) on 27 Jul 2022 or no-shows
+                            are subject to a property fee equal to 100% of the total amount paid for the reservation.
+                        </li>
+                        <li>Front desk staff will greet guests on arrival.</li>
+                        <li>Please note that BEX Travel Asia Pte Ltd and the hotel will not issue a tax invoice. You
+                            will receive a commercial receipt for the purpose of the transaction.</li>
+                        <li>By clicking on the button below, I acknowledge that I have reviewed the Privacy Statement.
+                            and Government Travel Advice . and have reviewed and accept the Rules & Restrictions . and
+                            Terms of Use ..
+                            We use secure transmission and encrypted storage to protect your personal information.This
+                            payment will be processed in India. This does not apply when the travel provider
+                            (airline/hotel/rail, etc.) processes your payment.</li>
+                    </ul>
+                    <button id="make_payment"> Make Payment</button>
+                </div>
+
+            </div>
+            <div class="cart_body">
+                <div id="hotelDetail_cards">
+                    <h2 id="hotelName">Holiday Inn Goa Candolim</h2>
+                    <p class = "noBold" id="hotelReview">4.3/5 Excellent (3 reviews)</p>
+                    <p id="hotelName">Guests rated this property 5/5 for cleanliness</p>
+                </div>
+                <div class="payment_cards">
+                    <h2>Price details</h2>
+                    
+                    <hr>
+                    <p id="initial_price">1 room x 1 night: ₹ 6000/- </p>
+                    <p id="tax">Taxes and service fees: ₹ 600/- </p>
+                    <hr>
+                    <p id="initial_price">Total: ₹ 6600/- </p>
+                    <div id="promo">
+                        <input id="promoCode" placeholder="Enter Promocode"type="text">
+                        <button id = "applyCode" class="">Apply Code</button>
+                    </div>
+                    <p class="lighter">Trip total includes GST that Expedia pays to its vendors (e.g. Hotels). We retain
+                        our service fee for facilitating your travel reservation. For details please see our terms of
+                        use.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
