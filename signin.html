@@ -22,7 +22,7 @@
         width: 500px;
         height: 800px;
     }
-    #email-input,#password-input{
+    #name-input,#password-input{
         height: 50px;
         width: 500px;
      
@@ -51,15 +51,16 @@
     </div>
     <div id="signin">
         <h1>Sign In</h1>
-        <input id="email-input" type="text" placeholder="    Email Address">
+        <form action="">
+        <input id="name-input" type="text" placeholder="    User Name">
         
         <input id="password-input" type="password" placeholder="   Password">
-        
+    </form>
         <p> <input type="checkbox">Keep me signed in</p>
         <p>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
       <p>By signing in, I agree to the Expedia<a href=""> Terms and Conditions, Privacy Statement</a> and  <a href="">Expedia Rewards Terms and Conditions.</a> </p>
         <p> 
-            <button id="sign-in-button">Sign In</button>
+            <button id="sign-in-button" onclick="login()">Sign In</button>
             <a href=""> <p>Forgot Password?</p></a>
            
             <p>Don't have an account? <a href="">Create One</a></p>
@@ -68,3 +69,4 @@
     </div>
 </body>
 </html>
+<script src="./Scripts/signin.js"></script>
