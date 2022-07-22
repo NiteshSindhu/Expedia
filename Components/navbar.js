@@ -1,16 +1,52 @@
 let navbar=()=>{
-    return `  <div id="logo">
-    <img id="image_compfirst" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
-    
-</div>
-<h4>More Info</h4>
+    return ` <div id="navbar">
+    <div class="left">
+      <img
+        src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
+      />
+      <ul>
+        <li>
+          More Travel<i class="fa fa-arrow-down"></i>
 
-<div id="navbar2">
-<h3>English</h3>
-<h3>Support</h3>
-<h3>Trips</h3>
-<h3 style="text-decoration: none;">Sign in</h3>
-</div>`
+          <div class="sub-left">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-building"></i> Stays</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-plane"></i> Flights</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-car"></i> Cars</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-briefcase"></i> Packages</a>
+              </li>
+              <li><a href="#">Holiday activities</a></li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">Groups&Meatings</a></li>
+              <li><a href="#">Mobile</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <a href="#"><i class="fa fa-globe"></i> English</a>
+        </li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Tips</a></li>
+        <li>
+          <a href="#"><i class="fa fa-bell fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="#">Sign-in</a>
+        </li>
+      </ul>
+    </div>
+  </div>`
 }
 let compfirst=()=>{
     return `  <img id="compfirst_img" src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="">
