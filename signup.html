@@ -22,7 +22,7 @@
         width: 300px;
         height: 600px;
     }
-    #email-input,#firstname-input,#surname-input,#password-input{
+    #email-input,#firstname-input,#surname-input,#password-input,#mobile-input,#desc-input{
         height: 40px;
         width: 400px;
      
@@ -49,22 +49,26 @@
         <img id="image_compfirst" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
     </div>
     <div id="signup">
+        <form action="">
         <h1>Create an account</h1>
         <input id="email-input" type="text" placeholder="    Email Address">
         <input id="firstname-input" type="text" placeholder="   First Name">
         <input id="surname-input" type="text" placeholder="   Sur Name">
         <input id="password-input" type="password" placeholder="   Password">
-        
+        <input id="mobile-input" type="number" placeholder="Mobile No.">
+        <input id="desc-input" type="text" placeholder="Description">
+    </form>
         <p> <input type="checkbox">Keep me signed in</p>
         <p>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
       
         <p>  <input type="checkbox">
             I'd like to receive travel deals, special offers and other information from Expedia via email.</p>
             <p>By creating an account, I agree to the Expedia Terms and Conditions, Privacy Statement and Expedia Rewards Terms and Conditions.</p>
-            <button id="continue">Continue</button>
+            <button id="continue" onclick="register()">Continue</button>
             <p>Alread have an account? <a href="">sign in</a></p>
             
             
     </div>
 </body>
 </html>
+<script src="./Scripts/signup.js"></script>
