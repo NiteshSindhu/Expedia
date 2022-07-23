@@ -10,25 +10,26 @@
      justify-content: space-between;
      display: flex;
  }
- #card>div{
-    margin-bottom: 30px;
- }
- #form,#form2{
+ #form{
      width: 90%;
-     display: flex;
-     justify-content: space-between;
+ }
+ #form>div{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
  }
  .form-control{
      border-radius: 10px;
-     width: 30%;
+     width: 48%;
      height: 30px;
-     margin-left: 10px;
+     /* margin-left: 10px; */
      font-size: 17px;
      box-shadow: none;
      border:0.5 solid gray;
  }
- #form .select-date,#form2 .select-date{
-     width:20%;
+ #form .select-date{
+     width:23%;
  }
  .btn{
      border: 0;
