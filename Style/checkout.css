@@ -149,3 +149,26 @@ button{
     color: black;
     font-weight: bold;
 }
+#con{
+    margin-left: 75%;
+}
+#left{
+    margin-left: 250px;
+    margin-bottom: 150px;
+}
+#one{
+    display: flex;
+     font-weight: 700;
+}
+#one-1{
+ margin-bottom: 100px;
+ 
+}
+#one-2{
+    font-weight: 700;
+    width:300px;
+    height: 400px;
+}
+.one>p{
+    text-decoration-color: #1f1f1f;
+}
