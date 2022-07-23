@@ -7,22 +7,25 @@
     <title>Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp; Airfares</title>
     <link rel="stylesheet" href="./Style/flight.css">
     <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" >
 </head>
 <body>
     <div id="navbar"></div>
     <div id="booking-form">
         <div class="top">
-           <button class="btn">Return</button>
-           <button class="btn">One-Way</button>
-           <button class="btn">Multi-City</button>
+           <button class="btn" id="btn1">Return</button>
+           <button class="btn" id="btn2">One-Way</button>
+           <button class="btn" id="btn3">Multi-City</button>
         </div><br>
+        <div id="card">
         <div id="form">
-            <input type="text" placeholder="Leaving from" class="form-control">
-            <input type="text" placeholder="Going to" class="form-control">
-            <input type="date" placeholder="Departing" class="form-control select-date">
-            <input type="date" placeholder="Returning "class="form-control select-date">
-        </div><br><br>
-        <button id="search">Search</button>
+            <input type="text" placeholder="Leaving from" class="form-control" id="leave">
+            <input type="text" placeholder="Going to" class="form-control" id="goin">
+            <input type="date" placeholder="Departing" class="form-control select-date" id="depart">
+            <input type="date" placeholder="Returning "class="form-control select-date" id="return">
+        </div>
+    </div><br><br>
+        <button id="search" >Search</button>
         
     </div>
 <div id="compfirst"></div>
