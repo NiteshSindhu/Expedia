@@ -1,6 +1,6 @@
 
 async function getDatafromUrl() {
-    let url = `http://fake-hotel-api.herokuapp.com/api/hotels`;
+    let url = `https://fake-hotel-api.herokuapp.com/api/hotels`;
     let response = await fetch(url);
     let resultArr = await response.json();
     display(resultArr);
