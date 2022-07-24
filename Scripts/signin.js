@@ -5,11 +5,6 @@ var regdusers=JSON.parse(localStorage.getItem("usercreds"))||[];
 function login(){
     // event.preventDefault();
 
-
-    email:document.getElementById("name-input").value,
-
-
-
     var enteredemail=document.getElementById("name-input").value;
 
     var enteredpassword=document.getElementById("password-input").value;
