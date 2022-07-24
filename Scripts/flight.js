@@ -1,12 +1,3 @@
-// export {navbar,compfirst,complast,footer,footerlast};
-
-// import {navbar,compfirst,complast,footer,footerlast} from "../Components/navbar.js";
-// document.getElementById("navbar").innerHTML=navbar();
-// document.getElementById("compfirst").innerHTML=compfirst();
-// document.getElementById("complast").innerHTML=complast();
-// document.getElementById("footer").innerHTML=footer();
-// document.getElementById("footer-last").innerHTML=footerlast();
-
 let arr=[];
 let flightdat=()=>{
     let a=document.getElementById("leave").value;
@@ -17,7 +8,7 @@ let flightdat=()=>{
     arr.push(obj);
     console.log(arr);
     localStorage.setItem("bookdata",JSON.stringify(arr));
-    // window.location.href="flights.html";
+    window.location.href="flights.html";
 };
 class Data{
     constructor(a,b,c,d){

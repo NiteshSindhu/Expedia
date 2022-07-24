@@ -32,6 +32,9 @@ let Stays=()=>{
     let btn=document.createElement("button");
     btn.setAttribute("id","search");
     btn.innerText="Search";
+    btn.addEventListener("click",function(){
+        goingto();
+    });
     div2.append(input1,input3,input4,input2);
     y.append(div2,btn);
 };
@@ -61,12 +64,18 @@ let topdata=()=>{
 
     z.append(div1,br,div2);
 };
+let goingto=()=>{
+    window.location.href="hotels.html";
+};
 let flightdata=()=>{
+    // y.innerHTML=null;
     ReturnFlight();
-    
-document.getElementById("btn1").addEventListener("click",ReturnFlight);
 };
 
+let carsd=()=>{
+    y.innerHTML=null;
+carsdata();
+};
 let x=document.getElementById("card");
 let ReturnFlight=()=>{
     x.innerHTML=null;
@@ -98,8 +107,19 @@ let ReturnFlight=()=>{
     input3.setAttribute("id","depart");
     input4.setAttribute("id","return");
 
-    div2.append(input1,input2,input3,input4);
+    let bt=document.createElement("button");
+    bt.innerText="Search";
+    bt.setAttribute("id","search");
+    bt.addEventListener("click",function(){
+        gotopage();
+    });
+
+    div2.append(input1,input2,input3,input4,bt);
     x.append(div2);
 };
+function gotopage(){
+    window.location.href="flights.html";
+}
 document.getElementById("button1").addEventListener("click",Stays);
+document.getElementById("button3").addEventListener("click",carsd);
 document.getElementById("button2").addEventListener("click",flightdata);

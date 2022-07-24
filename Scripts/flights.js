@@ -9721,10 +9721,10 @@ let arr=[
         "count": 63,
         "sponsors": []
     },
-]
+];
 
 console.log(arr);
-async function getdata(){
+function getdata(){
     let s=document.getElementById("leave").value;
     let d=document.getElementById("goin").value;
     let deprture=document.getElementById("depart").value;
@@ -9740,7 +9740,7 @@ async function getdata(){
     // fetcdata(s,deprture)
     // let n=await fetcdata(s)
    
-    // append(n);
+    append(arr);
     }
 
 // async function fetcdata(s,date){
@@ -9755,37 +9755,30 @@ async function getdata(){
 // }
 let box=document.getElementById("flight");
 function append(data){
-    if(!data){
-    return;
-}
+//     if(!data){
+//     return;
+// }
     box.innerHTML=null;
-
     data.forEach(function(elem){
              let div=document.createElement("div");
             
-             div.setAttribute("id","flights")
+             div.setAttribute("id","flights");
             let h1=document.createElement("h1");
-            h1.innerText=elem.legs.arrivalTimeMinutes+"-"+elem.legs.departureTime;
+            h1.innerText=`${elem.legs.arrivalTime}+"-"+${elem.legs.departureTime}`;
             let p=document.createElement("p");
-            p.innerText=elem.legs.duration;
+            p.innerText=`${elem.legs.duration}`;
             let p1=document.createElement("p");
-            p1.innerText=`RS. ${elem.fares.price.totalAmount}`;
-        // let btn=document.createElement("button");
-        // btn.innerText="Book Now";
-        // btn.addEventListener("click",function(){
-        //     addData(elem);
-        // })
-            
+            // p1.innerText=elem.fares.price.totalAmount;
             div.append(h1,p,p1);
             box.append(div);
-    })
+    });
 }
 
 let addData=(elem)=>{
 
     localStorage.setItem("book",JSON.stringify(elem));
     window.location.href="checkout.html";
-}
+};
 
 let id;
 function debounced(func,delay){

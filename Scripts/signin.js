@@ -6,11 +6,8 @@ function login(){
     // event.preventDefault();
 
 
-    email:document.getElementById("name-input").value,
 
-
-
-    var enteredemail=document.getElementById("name-input").value;
+    let enteredemail=document.getElementById("name-input").value;
 
     var enteredpassword=document.getElementById("password-input").value;
 

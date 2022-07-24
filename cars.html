@@ -12,8 +12,9 @@
 <body>
     <div id="navbar"></div>
     <div id="booking-form">
+        <div id="card">
         <div class="top">
-           <button class="btn">Car Hire</button>
+           <button class="btn" id="but1">Car Hire</button>
            <button class="btn">Airport Transport</button>
         </div><br>
         <div id="form">
@@ -24,20 +25,22 @@
             <div class="div2">
             
             
-            <input type="date" placeholder="Departing" class="form-control select-date">
-             <input type="date" placeholder="Returning "class="form-control select-date">
-            <input type="time" placeholder="Pickup Time" class="form-control select-date slect-time">
-            <input type="time" placeholder="Dropoff Time" class="form-control select-date slect-time">
+            <input onfocus=this.type="date" placeholder="Pick-up date" class="form-control select-date">
+             <input onfocus=this.type="date" placeholder="Drop-off date "class="form-control select-date">
+            <input onfocus=this.type="time" placeholder="Pickup Time" class="form-control select-date slect-time">
+            <input onfocus=this.type="time"  placeholder="Dropoff Time" class="form-control select-date slect-time">
             </div>
         
         </div><br><br>
         <button id="search">Search</button>
-        
     </div>
-        <div id="compfirst"></div>
-        <div id="complast"></div>
-        <div id="footer"></div>
-        <div id="footer-last"></div>
+    </div>
+    <div id="compfirst"></div>
+    <div id="imgagebanner"></div>
+    <div id="complast"></div>
+    <div id="footer"></div>
+    <div id="footer-last">
 </body>
 </html>
-<script src="./Scripts/car.js" type="module"></script>
+<script src="./Scripts/car.js" ></script>
+<script src="./Scripts/index.js" type="module"></script>
