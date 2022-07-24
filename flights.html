@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp; Airfares</title>
     <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="./Style/flights.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" >
 </head>
 <body>
     <div id="navbar"></div>
-    
+    <div id="card">
+        <div id="form">
+            <input type="text" placeholder="Leaving from" class="form-control" id="leave">
+            <input type="text" placeholder="Going to" class="form-control" id="goin">
+            <input type="date" placeholder="Departing" class="form-control select-date" id="depart">
+            <input type="date" placeholder="Returning "class="form-control select-date" id="return">
+            <button class="form-control button" onClick="debounced(getdata,1000)">Search</button>
+            </div>
+    </div>
+    <div id="flight"></div>
     <div id="flightsdata"></div>
     <div id="compfirst"></div>
     <div id="complast"></div>
@@ -18,4 +28,5 @@
     <div id="footer-last"></div>
 </body>
 </html>
-<script src="./Scripts/flights.js" type="module"></script>
+<script src="./Scripts/flights.js"></script>
+<script src="./Scripts/index.js" type="module"></script>

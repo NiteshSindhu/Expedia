@@ -1,11 +1,11 @@
 // export {navbar,compfirst,complast,footer,footerlast};
 
-import {navbar,compfirst,complast,footer,footerlast} from "../Components/navbar.js";
-document.getElementById("navbar").innerHTML=navbar();
-document.getElementById("compfirst").innerHTML=compfirst();
-document.getElementById("complast").innerHTML=complast();
-document.getElementById("footer").innerHTML=footer();
-document.getElementById("footer-last").innerHTML=footerlast();
+// import {navbar,compfirst,complast,footer,footerlast} from "../Components/navbar.js";
+// document.getElementById("navbar").innerHTML=navbar();
+// document.getElementById("compfirst").innerHTML=compfirst();
+// document.getElementById("complast").innerHTML=complast();
+// document.getElementById("footer").innerHTML=footer();
+// document.getElementById("footer-last").innerHTML=footerlast();
 
 let arr=[];
 let flightdat=()=>{
@@ -43,12 +43,12 @@ let ReturnFlight=()=>{
     input2.placeholder="Going to";
     input2.classList.add("form-control");
     let input3=document.createElement("input");
-    input3.type="date";
+    input3.setAttribute("onfocus","(this.type='date')");
     input3.placeholder="Departing";
     input3.classList.add("form-control");
     input3.classList.add("select-date");
     let input4=document.createElement("input");
-    input4.type="date";
+    input4.setAttribute("onfocus","(this.type='date')");
     input4.placeholder="Returning";
     input4.classList.add("form-control");
     input4.classList.add("select-date");
@@ -75,7 +75,7 @@ let Oneway=()=>{
     input2.placeholder="Going to";
     input2.classList.add("form-control");
     let input3=document.createElement("input");
-    input3.type="date";
+    input3.setAttribute("onfocus","(this.type='date')");
     input3.placeholder="Departing";
     input3.classList.add("form-control");
     input3.classList.add("select-date");
@@ -105,7 +105,7 @@ let multicity=()=>{
     input2.placeholder="Going to";
     input2.classList.add("form-control");
     let input3=document.createElement("input");
-    input3.type="date";
+    input3.setAttribute("onfocus","(this.type='date')");
     input3.placeholder="Departing";
     input3.classList.add("form-control");
     input3.classList.add("select-date");
@@ -128,7 +128,7 @@ let multicity=()=>{
     input5.placeholder="Going to";
     input5.classList.add("form-control");
     let input6=document.createElement("input");
-    input6.type="date";
+    input6.setAttribute("onfocus","(this.type='date')");
     input6.placeholder="Departing";
     input6.classList.add("form-control");
     input6.classList.add("select-date");

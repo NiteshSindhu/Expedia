@@ -5,4 +5,8 @@ document.getElementById("compfirst").innerHTML=compfirst();
 document.getElementById("complast").innerHTML=complast();
 document.getElementById("footer").innerHTML=footer();
 document.getElementById("footer-last").innerHTML=footerlast();
+
+
+
+
 document.getElementById("imgagebanner").innerHTML=imgbanner();
