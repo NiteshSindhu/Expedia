@@ -62,6 +62,7 @@ function display(resultArr) {
                 let bookArr = new Array();
                 bookArr.push({name: element.name,price:element.price});
                 localStorage.setItem("bookingDetails",JSON.stringify(bookArr));
+                location.href = "./payment.html";
                 
             })
         } else {
