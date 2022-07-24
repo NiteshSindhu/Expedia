@@ -41,7 +41,7 @@ promoBtn.addEventListener("click",()=>{
     let promoCode = document.getElementById("promoCode").value;
 
     let disc= couponCode[promoCode];
-     final = final-(final*disc);
+     final = (final-(final*disc)).toFixed(2);
      document.getElementById("final_price").innerText="Total: ₹"+final;
      alert(`${promoCode} coupon Applied Successfully!`)
 
