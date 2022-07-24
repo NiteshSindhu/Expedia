@@ -51,5 +51,9 @@ input{
     margin-left: 20px;
 }
 .hotelStar{
-    color: #1345cf;
+    color: #cf6813;
+}
+
+.hotelReview{
+    color: crimson;
 }
