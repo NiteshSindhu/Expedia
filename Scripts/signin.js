@@ -3,7 +3,7 @@ async function login(){
 
 let login_data={
 
-    username:document.getElementById("name-input").value,
+    email:document.getElementById("name-input").value,
 
     password:document.getElementById("password-input").value,
 }
