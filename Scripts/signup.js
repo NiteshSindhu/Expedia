@@ -10,7 +10,7 @@ async function register(){
         description:document.getElementById("desc-input").value,
 
 
-    }
+    };
 
     signupdata=JSON.stringify(signupdata);
 
@@ -22,7 +22,7 @@ let response=await fetch(signup_api_link,{
     headers:{
         'Content-Type':'application/json'
     }
-})
+});
 
 let data=await response.json();
 console.log(data);
