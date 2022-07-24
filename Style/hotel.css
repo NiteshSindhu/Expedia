@@ -1,0 +1,59 @@
+
+#subsection{
+    background-color: #ededed ;
+    padding: 50px;
+}
+
+.card{
+    display: flex;
+    width: 80%;
+    background-color: white;
+    border-radius: 4px;
+    margin: auto;
+    padding:20px;
+    margin-top: 10px;
+
+}
+input{
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: auto;
+}
+.searchHotel{
+    
+    width: 150px;
+    height: 40px;
+    border: transparent;
+    color: white;
+    background-color:#3662d8;
+    border-radius: 8px;
+}
+.searchHotel:hover{
+    background-color:#1345cf;
+}
+
+
+#filter{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+}
+
+#result{
+    margin-top: 40px;
+
+}
+
+.detailsDiv{
+    margin-left: 20px;
+}
+.hotelStar{
+    color: #cf6813;
+}
+
+.hotelReview{
+    color: crimson;
+}

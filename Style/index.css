@@ -70,15 +70,14 @@ font-style:sans-serif;
             margin-left: 150px;
         }
         #searchdiv{
-            height: 300px;
+            height: auto;
             margin-top: 40px;
             margin-left: 100px;
             margin-right: 100px;
-            
+            padding: 20px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
         #searchdiv-1{
-            padding-top: 20px;
             display: flex;
             justify-content:center;
             

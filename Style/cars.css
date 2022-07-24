@@ -55,4 +55,8 @@
  #search:hover{
      background-color: rgb(72, 112, 219);
  }
+ #form input
+ {
+    height: 60px;
+ }
  

@@ -1,28 +1,35 @@
 
-async function login(){
+document.getElementById("sign-in-button").addEventListener("click",login);
 
-let login_data={
+var regdusers=JSON.parse(localStorage.getItem("usercreds"))||[];
+function login(){
+    // event.preventDefault();
 
-    username:document.getElementById("name-input").value,
 
-    password:document.getElementById("password-input").value,
-}
 
-login_data=JSON.stringify(login_data);
+    var enteredemail=document.getElementById("name-input").value;
 
-let login_api_link='https://masai-api-mocker.herokuapp.com/auth/login';
+    var enteredpassword=document.getElementById("password-input").value;
 
-let response=await fetch(login_api_link,{
+    if(enteredpassword=="") alert("Wrong credentials")
+    else if(enteredemail==""){
+        alert("User doesn't exist, Sign Up")
+    }else{
+           if(checkmail(enteredemail,enteredpassword)==true){
+           alert("Login successful!");
+           window.location.href="index.html";
+        }else{
+            alert("Alredy Have an Account")
+        }
+       
+    }
+    }
+    let checkmail=(mail,pass)=>{
+        let f=regdusers.filter((elem)=>{
+            return mail===elem.email && pass==elem.password;
+        });
+        if(f.length>0) return true;
+        else return false;
+    }
 
-method:'POST',
 
-body:login_data,
-headers:{
-    'Content-Type':'application/json',
-}
-
-})
-let data=await response.json();
-console.log(data);
-
-}

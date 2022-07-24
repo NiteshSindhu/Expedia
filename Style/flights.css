@@ -1,0 +1,44 @@
+#card>div{
+    margin-bottom: 30px;
+    margin-top: 30px;
+ }
+ #form input{
+    height: 70px;
+    padding-left: 20px;
+ }
+ #form,#form2{
+     width: 90%;
+     display: flex;
+     justify-content: space-between;
+ }
+ .form-control{
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 17px;
+    box-shadow: none;
+    border:0.5 solid gray;
+}
+#form .select-date,#form2 .select-date{
+    width:15%;
+}
+.btn{
+    border: 0;
+    background-color: #fff;
+    padding: 5px 20px 5px 20px;
+}
+.btn:hover{
+    background-color: rgb(231, 237, 253);
+    border-radius: 5px;
+}
+.button{
+    width:15%;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color:rgb(72, 141, 219) ;
+}

@@ -11,13 +11,13 @@ let navbar=()=>{
           <div class="sub-left">
             <ul>
               <li>
-                <a href="#"><i class="fa fa-building"></i> Stays</a>
+                <a href="hotels.html"><i class="fa fa-building"></i> Stays</a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-plane"></i> Flights</a>
+                <a href="flight.html"><i class="fa fa-plane"></i> Flights</a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-car"></i> Cars</a>
+                <a href="cars.html"><i class="fa fa-car"></i> Cars</a>
               </li>
               <li>
                 <a href="#"><i class="fa fa-briefcase"></i> Packages</a>
@@ -37,17 +37,20 @@ let navbar=()=>{
           <a href="#"><i class="fa fa-globe"></i> English</a>
         </li>
         <li><a href="#">Support</a></li>
-        <li><a href="#">Tips</a></li>
+      
+        <li><a href="trips.html">Trips</a></li>
+
+       
         <li>
           <a href="#"><i class="fa fa-bell fa-2x"></i></a>
         </li>
         <li>
-          <a href="#">Sign-in</a>
+          <a href="signin.html">Sign-in</a>
         </li>
       </ul>
     </div>
-  </div>`
-}
+  </div>`;
+};
 let compfirst=()=>{
     return `  <img id="compfirst_img" src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="">
     <div id="compfirst-1">
@@ -64,12 +67,12 @@ let compfirst=()=>{
 <br>
 <h4 style="margin-left: 30px;">Scan The QR Code</h4>
     </div>
-`
-}
+`;
+};
 let complast=()=>{
     return ` <h2>Explore a world of travel with Expedia</h2>
-    <h3>Discover new places and experiences</h3>`
-}
+    <h3>Discover new places and experiences</h3>`;
+};
 let footer=()=>{
     return `  <div id="footer-1">
     <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
@@ -106,11 +109,12 @@ let footer=()=>{
     <p>Book a flight using an airline credit</p>
     <p>International travel documents</p>
 
-</div>`
-}
+</div>`;
+};
 let footerlast=()=>{
     return `  <img id="footer-last-img" src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" alt="">
     <p id="footer-last-p">© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>`
-}
+};
+
 
 export {navbar,compfirst,complast,footer,footerlast};
