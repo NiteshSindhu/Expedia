@@ -1,32 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotels | Expedia</title>
+    <link rel="stylesheet" href="./Style/hotel.css">
+    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <div id="">
+    <div id="navbar">
+        <div class="left">
+            <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" />
+            <ul>
+                <li>
+                    More Travel<i class="fa fa-arrow-down"></i>
 
-    </div>
-    <div id="">
-        <div id="filterHead">
-
+                    <div class="sub-left">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-building"></i> Stays</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-plane"></i> Flights</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-car"></i> Cars</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-briefcase"></i> Packages</a>
+                            </li>
+                            <li><a href="#">Holiday activities</a></li>
+                            <li><a href="#">Deals</a></li>
+                            <li><a href="#">Groups&Meatings</a></li>
+                            <li><a href="#">Mobile</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div id ="filterBody">
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-globe"></i> English</a>
+                </li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Tips</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-bell fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="#">Sign-in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="subsection">
+        <div class="card">
+            <input type="text" id="searchDest" placeholder="Going to">
+            <label>Check-in </label>
+            <input type="datetime-local" id="searchDateCheckin" placeholder="Check-in">
+            <label>Check-out </label>
+            <input type="date" id="searchDateCheckout" placeholder="Check-out">
+            <button class="searchHotel"> Search </button>
+        </div>
             <div id="filter">
-
+                <select>
+                    <option>Select Filter</option>
+                    <option>Price low to high</option>
+                    <option>Price High to Low</option>
+                    <option>AC Availability</option>
+                    <option>Non-AC</option>
+                </select>
             </div>
             <div id="result">
-    
+
             </div>
         </div>
-        
-    </div>
-    
-</body>
-</html>
-<script>
 
-</script>
+</body>
+
+</html>
+<script src="./Scripts/hotel.js"></script>
