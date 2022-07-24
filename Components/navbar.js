@@ -11,13 +11,13 @@ let navbar=()=>{
           <div class="sub-left">
             <ul>
               <li>
-                <a href="#"><i class="fa fa-building"></i> Stays</a>
+                <a href="hotels.html"><i class="fa fa-building"></i> Stays</a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-plane"></i> Flights</a>
+                <a href="flight.html"><i class="fa fa-plane"></i> Flights</a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-car"></i> Cars</a>
+                <a href="cars.html"><i class="fa fa-car"></i> Cars</a>
               </li>
               <li>
                 <a href="#"><i class="fa fa-briefcase"></i> Packages</a>
@@ -40,13 +40,12 @@ let navbar=()=>{
       
         <li><a href="trips.html">Trips</a></li>
 
-           <li><a href="#">Trips</a></li>
        
         <li>
           <a href="#"><i class="fa fa-bell fa-2x"></i></a>
         </li>
         <li>
-          <a href="#">Sign-in</a>
+          <a href="signin.html">Sign-in</a>
         </li>
       </ul>
     </div>
