@@ -62,7 +62,6 @@ let topdata=()=>{
     z.append(div1,br,div2);
 };
 let flightdata=()=>{
-    topdata();
     ReturnFlight();
     
 document.getElementById("btn1").addEventListener("click",ReturnFlight);
