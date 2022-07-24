@@ -1,0 +1,46 @@
+#trips {
+    width: 500px;
+    height: 600px;
+    margin: auto;
+  }
+  #trips > div > h1 {
+    font-size: 30px;
+  }
+  #trips > div:nth-child(2) {
+    margin: auto;
+    width: 170px;
+  }
+  #trips > div:nth-child(3) {
+    margin-top: 20px;
+  }
+  #trips > div:nth-child(3) > button {
+    cursor: pointer;
+    width: 500px;
+    height: 35px;
+    background-color: #3662d8;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    min-block-size: 2.25rem;
+    padding: 0.25rem 1rem;
+    font-weight: 500;
+    border: transparent;
+  }
+  #trips > div:nth-child(3) > button:hover{
+    background-color: #6884d2;
+  }
+  #trips > div:nth-child(4) {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 500px;
+    height: 80px;
+    border: 1px solid rgb(139, 138, 140);
+    border-radius: 10px;
+  }
+  #trips > div:nth-child(4)>p {
+    margin-top: -10px;
+    font-weight: 300;
+    
+  }
+  #trips > div:nth-child(4)>h3,p{
+    margin-left: 10px;
+  }
