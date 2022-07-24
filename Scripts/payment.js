@@ -33,7 +33,7 @@ document.getElementById("tax").innerText= "Taxes and service fees: ₹" +tax;
 let final = price+tax
 document.getElementById("final_price").innerText="Total: ₹"+final;
 
-let usercreds = JSON.Parse(localStorage.getItem('usercreds'));
+let usercreds = JSON.parse(localStorage.getItem('usercreds'));
 
 let userEmail = document.getElementById("userEmail");
 userEmail.innerText = usercreds.email;
