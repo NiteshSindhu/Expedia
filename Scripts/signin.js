@@ -3,15 +3,8 @@ document.getElementById("sign-in-button").addEventListener("click",login);
 
 var regdusers=JSON.parse(localStorage.getItem("usercreds"))||[];
 function login(){
-    // event.preventDefault();
 
-<<<<<<< HEAD
     var enteredemail=document.getElementById("name-input").value;
-=======
-
-
-    let enteredemail=document.getElementById("name-input").value;
->>>>>>> c5ddb65d9d3e484c7df5cdc3dbefcb635de15fda
 
     var enteredpassword=document.getElementById("password-input").value;
 
