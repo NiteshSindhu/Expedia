@@ -113,4 +113,5 @@ let footerlast=()=>{
     <p id="footer-last-p">© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>`
 };
 
+
 export {navbar,compfirst,complast,footer,footerlast};

@@ -8,7 +8,8 @@
     
 <link rel="stylesheet" href="./Style/index.css">
     <link rel="stylesheet" href="./Style/navbar.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="./Style/flight.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -25,10 +26,19 @@
         
     </div>
     <hr>
-    <div id="inputdata">
-
+    <div id="booking-form">
+        <div id="card">
+        <div id="form">
+            <input type="text" placeholder="Leaving from" class="form-control" id="leave">
+            <input onfocus="(this.type='date')" placeholder="Departing Date" class="form-control select-date" id="depart">
+            <input onfocus="(this.type='date')" placeholder="Returning Date"class="form-control select-date" id="return">
+            <input type="number" placeholder="Travellers" class="form-control" id="goin">
+        </div>
+        <button id="search" >Search</button>
     </div>
-    <button id="search-button">Search</button>
+        
+        
+    </div>
 </div>
 <div id="compfirst"></div>
 
@@ -41,3 +51,5 @@
 </body>
 </html>
 <script src="./Scripts/index.js" type="module"></script>
+<!-- <script src="./Scripts/flight.js"></script> -->
+<script src="./Scripts/index1.js"></script>

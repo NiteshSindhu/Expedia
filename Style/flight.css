@@ -1,7 +1,4 @@
 #booking-form{
-    width:90%;
-     margin:10% auto 0;
-     border: 1px solid #ced4da;
      padding: 20px;
  }
  .top{
@@ -12,6 +9,10 @@
  }
  #card>div{
     margin-bottom: 30px;
+ }
+ #form input{
+    height: 70px;
+    padding-left: 20px;
  }
  #form,#form2{
      width: 90%;
@@ -41,7 +42,6 @@
  }
  #search{
      display: block;
- 
      margin: auto;
      padding: 15px 40px;
      border-radius: 10px;
@@ -49,6 +49,7 @@
      color: white;
      font-size: 16px;
      font-weight: 500;
+     margin-top: 30px;
      background-color:rgb(72, 141, 219) ;
  }
  #search:hover{
