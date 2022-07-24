@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotels | Expedia</title>
+    <link rel="stylesheet" href="./Style/hotel.css">
+    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    
+    <div id="navbar">
+        <div class="left">
+           <a href="./index.html"><img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" /></a>
+            <ul>
+                <li> More Travel<i class="fa fa-arrow-down"></i>
+
+                    <div class="sub-left">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-building"></i> Stays</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-plane"></i> Flights</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-car"></i> Cars</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-briefcase"></i> Packages</a>
+                            </li>
+                            <li><a href="#">Holiday activities</a></li>
+                            <li><a href="#">Deals</a></li>
+                            <li><a href="#">Groups&Meatings</a></li>
+                            <li><a href="#">Mobile</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="subsection">
+            <div id="filter">
+                <select>
+                    <option>Sort by Price</option>
+                    <option>Price low to high</option>
+                    <option>Price High to Low</option>
+                </select>
+            </div>
+            <div id="result">
+
+            </div>
+        </div>
+
 </body>
+
 </html>
+<script src="./Scripts/hotel.js"></script>
