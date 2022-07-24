@@ -16,7 +16,7 @@ function login(){
            alert("Login successful!");
            window.location.href="index.html";
         }else{
-            alert("Alredy Have an Account")
+            alert("No account found! Create an account first")
         }
        
     }
