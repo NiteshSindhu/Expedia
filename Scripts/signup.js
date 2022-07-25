@@ -55,6 +55,7 @@ var userdata=JSON.parse(localStorage.getItem("usercreds"))||[];
             this.mobile=m;
             this.description=d;
             this.username=un;
+            this.status=false;
         }
     }
 

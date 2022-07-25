@@ -33,10 +33,10 @@ document.getElementById("tax").innerText= "Taxes and service fees: ₹" +tax;
 let final = price+tax
 document.getElementById("final_price").innerText="Total: ₹"+final;
 
-let usercreds = JSON.parse(localStorage.getItem('usercreds'));
+let usercreds = JSON.parse(localStorage.getItem('loginUser'));
 
 let userEmail = document.getElementById("userEmail");
-userEmail.innerText = usercreds.email;
+userEmail.innerText = usercreds[0];
 
 promoBtn.addEventListener("click",()=>{
     let promoCode = document.getElementById("promoCode").value;

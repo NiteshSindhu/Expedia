@@ -1,3 +1,17 @@
+// let userDataSignin = JSON.parse(localStorage.getItem('loginUser'));
+// let dispEmail;
+
+// if(userDataSignin[1]){
+//     dispEmail = userDataSignin[0];
+//     // document.getElementById("userNameStat").innerText = dispEmail;
+// }else{
+//     dispEmail = "Sign-in";
+//     // document.getElementById("userNameStat").innerText = dispEmail;
+// }
+
+// let s= document.getElementById("userNameStat").innerText;
+// console.log(s);
+
 let y=document.getElementById("card");
 let Stays=()=>{
     y.innerHTML=null;
