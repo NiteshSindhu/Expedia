@@ -36,7 +36,7 @@ let navbar=()=>{
         <li>
           <a href="#"><i class="fa fa-globe"></i> English</a>
         </li>
-        <li><a href="#">Support</a></li>
+        <li><a href="support.html">Support</a></li>
       
         <li><a href="trips.html">Trips</a></li>
 
