@@ -1,5 +1,5 @@
 let navbar=()=>{
-    return ` <div id="navbar">
+   return ` <div id="navbar">
     <div class="left">
       <img
         src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
@@ -45,11 +45,11 @@ let navbar=()=>{
           <a href="#"><i class="fa fa-bell fa-2x"></i></a>
         </li>
         <li>
-          <a href="signin.html">Sign-in</a>
+          <a id="userNameStat" href="signin.html">Sign-in</a>
         </li>
       </ul>
     </div>
-  </div>`;
+  </div>`;   
 };
 let compfirst=()=>{
     return `  <img id="compfirst_img" src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="">

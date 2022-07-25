@@ -21,11 +21,19 @@ function login(){
        
     }
     }
+    let userlogin=[];
     let checkmail=(mail,pass)=>{
         let f=regdusers.filter((elem)=>{
             return mail===elem.email && pass==elem.password;
         });
-        if(f.length>0) return true;
+        if(f.length>0) {
+            userlogin.push(mail);
+            let login=regdusers.status;
+            login=true;
+            userlogin.push(login);
+            localStorage.setItem('loginUser',JSON.stringify(userlogin));           
+            return true;
+        }
         else return false;
     }
 
